@@ -4,27 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO 優化標籤 -->
   <title>台中驛鐵道影展 - 穿梭百年光影與國定古蹟劇場</title>
-  <meta name="description" content="2026 台中驛鐵道影展專題介紹，結合舊台中車站辰野式歷史古蹟與獨立電影展演，打造專屬鐵道迷與影迷的沉浸式光影饗宴。">
-  <meta name="keywords" content="台中驛, 舊台中車站, 台中古蹟, 鐵道文化, 鐵道影展, 國定古蹟, 影展片單">
+  <meta name="description" content="2026 台中驛鐵道影展專題介紹，結合舊台中車站歷史古蹟與獨立電影展演。">
   <meta name="author" content="陳柔安">
   
-  <!-- Open Graph (社群分享 SEO) -->
-  <meta property="og:title" content="台中驛鐵道影展 - 穿梭百年光影與國定古蹟劇場">
-  <meta property="og:description" content="辰野式紅磚建築與鋼骨月台雨棚結合當代獨立電影展演，走訪台中不可錯過的鐵道文化光影盛宴。">
-  <meta property="og:type" content="website">
-  <!-- 替換社群分享用的主視覺圖片 -->
-  <meta property="og:image" content="images/station-hero.jpg">
-
-  <!-- 模組化切割 CSS -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
-  <!-- 頂部導覽列 (Navbar) -->
+  <!-- 頂部導覽列 -->
   <header class="navbar">
     <div class="nav-container">
       <a href="index.html" class="brand-logo">台中驛鐵道影展 <span>TRFF</span></a>
@@ -33,100 +23,94 @@
         <a href="index.html" class="active">首頁</a>
         <a href="history.html">歷史演進</a>
         <a href="#highlights">影展片單</a>
-        <a href="#info">觀影指南</a>
+        <a href="visit.html">觀影指南</a>
       </nav>
     </div>
   </header>
 
-  <!-- 主佈局容器：Grid System (側邊欄 + 主要內容) -->
+  <!-- 主佈局：全版面流體容器 -->
   <div class="main-wrapper">
     
-    <!-- 側邊欄 (Sidebar) -->
-    <aside class="sidebar">
-      <h3>園區與影展導引</h3>
-      <ul class="sidebar-menu">
-        <li><a href="#intro">專題簡介</a></li>
-        <li><a href="#highlights">必看片單</a></li>
-        <li><a href="#info">參觀與觀影資訊</a></li>
-        <li><a href="history.html">→ 台中驛百年歷史</a></li>
-        <li><a href="#info">→ 交通與月台地圖</a></li>
-      </ul>
-      <div class="sidebar-box">
-        <h4>開館與放映時間</h4>
-        <p>戶外園區：全天開放</p>
-        <p>室內展館：10:00 - 18:00</p>
-        <p>星空影院：18:30 - 21:00</p>
-        <p class="tag">每週二休館</p>
+    <!-- 1. 置頂全螢幕沉浸式 Hero 區塊 -->
+    <section id="intro" class="hero-section">
+      <img src="images/station-hero.jpg" alt="國定古蹟台中驛紅磚建築與鐘樓全景" class="hero-image">
+      <div class="hero-content">
+        <h1>遇見鐵道光影的過去、現在與未來</h1>
+        <p>台中驛鐵道影展坐落於國定古蹟舊台中車站，漫步在紅磚鐘樓與鋼骨月台下，感受歷史建築與當代電影交織的光影盛宴。</p>
       </div>
-    </aside>
+    </section>
 
-    <!-- 主要內容區 (Main Content) -->
-    <main class="content-area">
+    <!-- 2. 左右非對稱黃金比例網格 (左側主內容 / 右側浮動資訊導引) -->
+    <div class="content-grid-layout">
       
-      <!-- 1. 專題簡介 -->
-      <section id="intro" class="hero-section hero">
-        <!-- 替換 Banner 圖片：國定古蹟台中驛二代驛舍外觀全景 -->
-        <img src="images/station-hero.jpg" alt="國定古蹟台中驛紅磚建築與鐘樓全景" class="hero-image">
-        <div class="hero-content">
-          <h1>遇見鐵道光影的過去、現在與未來</h1>
-          <p>台中驛鐵道影展坐落於國定古蹟舊台中車站，漫步在紅磚鐘樓與鋼骨月台下，感受歷史建築與當代電影交織的光影盛宴。</p>
-        </div>
-      </section>
+      <!-- 左側：主要內容與強檔片單 -->
+      <main class="content-area">
+        
+        <!-- 必看亮點 / 影展片單 -->
+        <section id="highlights">
+          <h2 style="margin-bottom: 1.5rem; font-size: 1.6rem; color: #0A192F; font-family: 'Noto Serif TC', serif;">參展影片亮點</h2>
+          <div class="feature-grid">
+            
+            <article class="card">
+              <img src="images/station-building.jpg" alt="紅磚建築特寫" class="card-img">
+              <div class="card-body">
+                <h3>《鐵道歲月》紀錄長片</h3>
+                <p>橫跨半世紀的珍貴影像，記錄舊台中車站紅磚驛舍運行的最後時光與都市人文變遷。</p>
+              </div>
+            </article>
 
-      <!-- 2. 必看亮點 / 影展片單 -->
-      <section id="highlights">
-        <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--primary-color, #1E3A8A);">參展影片亮點</h2>
-        <div class="feature-grid">
-          
-          <article class="card">
-            <!-- 替換卡片圖片 1：台中驛紅磚牆與辰野式建築特寫 -->
-            <img src="images/station-building.jpg" alt="台中驛辰野式建築紅磚與洗石子帶飾特寫" class="card-img">
-            <div class="card-body">
-              <h3>《鐵道歲月》紀錄長片</h3>
-              <p>橫跨半世紀的珍貴影像，記錄舊台中車站紅磚驛舍運行的最後時光與都市人文變遷。</p>
-            </div>
-          </article>
+            <article class="card">
+              <img src="images/station-platform.jpg" alt="鋼骨雨棚實景" class="card-img">
+              <div class="card-body">
+                <h3>《終點站的夜未眠》</h3>
+                <p>坐在舊站古蹟月台與透光鋼骨雨棚下，細品三位陌生旅人在深夜發生的命運交會。</p>
+              </div>
+            </article>
 
-          <article class="card">
-            <!-- 替換卡片圖片 2：保留下來的一代月台鋼骨雨棚實景 -->
-            <img src="images/station-platform.jpg" alt="台中驛舊站第一月台鋼骨雨棚與保留軌道實景" class="card-img">
-            <div class="card-body">
-              <h3>《終點站的夜未眠》</h3>
-              <p>坐在舊站古蹟月台與透光鋼骨雨棚下，細品三位陌生旅人在深夜發生的命命运交會。</p>
-            </div>
-          </article>
+          </div>
+        </section>
 
-          <article class="card">
-            <!-- 替換卡片圖片 3：歷史古蹟與現代火車站共融的軌道視角 -->
-            <img src="images/station-track.jpg" alt="從保留軌道視角眺望舊台中車站鐘樓與現代高架月台" class="card-img">
-            <div class="card-body">
-              <h3>《記憶月台》獨立短片</h3>
-              <p>採訪老台鐵員工與在地居民，結合國定古蹟建築立面投影，呈獻動人視覺饗宴。</p>
-            </div>
-          </article>
+        <!-- 參觀資訊區塊 -->
+        <section id="info" style="background: #FFFFFF; padding: 2.5rem; border-radius: 20px; border: 1px solid #E2E8F0;">
+          <h2 style="margin-bottom: 1rem; font-size: 1.5rem; color: #0A192F; font-family: 'Noto Serif TC', serif;">觀影與園區資訊指南</h2>
+          <p style="margin-bottom: 0.75rem;"><strong>📍 園區地址：</strong>台中市中區台灣大道一段 1 號（台中驛鐵道文化園區／舊台中車站）</p>
+          <p style="margin-bottom: 0.75rem;"><strong>🎫 門票與取票：</strong>園區免費入場自由參觀；露天星空影院憑線上預約免費兌換入場券。</p>
+          <p style="margin-bottom: 0.75rem;"><strong>🚌 大眾運輸：</strong>搭乘台鐵至「台中車站」出站即抵達舊站古蹟區。</p>
+          <p><strong>👟 參觀須知：</strong>室內展館區域請勿飲食與使用腳架。</p>
+        </section>
 
-        </div>
-      </section>
+        <!-- 分頁導覽 -->
+        <nav class="pagination-container" aria-label="分頁導航">
+          <ul class="pagination">
+            <li><span class="page-item active">1 (首頁)</span></li>
+            <li><a href="history.html" class="page-item">2 (歷史演進)</a></li>
+            <li><a href="visit.html" class="page-item">3 (參觀指南)</a></li>
+          </ul>
+        </nav>
 
-      <!-- 3. 參觀與觀影資訊 -->
-      <section id="info" style="background: var(--surface, #ffffff); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color, #e0e0e0); margin-top: 2rem;">
-        <h2 style="margin-bottom: 1rem; font-size: 1.5rem; color: var(--primary-color, #1E3A8A);">觀影與園區資訊指南</h2>
-        <p style="margin-bottom: 0.75rem;"><strong>📍 園區地址：</strong>台中市中區台灣大道一段 1 號（台中驛鐵道文化園區／舊台中車站）</p>
-        <p style="margin-bottom: 0.75rem;"><strong>🎫 門票與取票：</strong>園區免費入場自由參觀；露天星空影院憑線上預約免費兌換入場券。</p>
-        <p style="margin-bottom: 0.75rem;"><strong>🚌 大眾運輸：</strong>搭乘台鐵至「台中車站」出站即抵達舊站古蹟區；或搭乘市區公車至「台中火車站」下車。</p>
-        <p><strong>👟 參觀須知：</strong>室內展館區域請勿飲食與使用腳架，夜間星空放映請依工作人員指引於月台區就座。</p>
-      </section>
+      </main>
 
-      <!-- 分頁導覽 (Pagination，符合作業分頁要求) -->
-      <nav class="pagination-container" aria-label="分頁導航">
-        <ul class="pagination">
-          <li><span class="page-item active">1 (首頁)</span></li>
-          <li><a href="history.html" class="page-item">2 (歷史演進)</a></li>
-          <li><a href="#highlights" class="page-item">3 (影展片單)</a></li>
+      <!-- 右側：獨立浮動側邊欄 (Sidebar 模組卡片) -->
+      <aside class="sidebar">
+        <h3>導覽選單</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#intro">專題主視覺簡介</a></li>
+          <li><a href="#highlights">精選參展片單</a></li>
+          <li><a href="#info">參觀與觀影資訊</a></li>
+          <li><a href="history.html">→ 探索台中驛百年歷史</a></li>
+          <li><a href="visit.html">→ 交通與月台地圖</a></li>
         </ul>
-      </nav>
+        <div class="sidebar-box">
+          <h4>開館與放映時間</h4>
+          <p>戶外園區：全天開放</p>
+          <p>室內展館：10:00 - 18:00</p>
+          <p>星空影院：18:30 - 21:00</p>
+          <p class="tag">每週二休館</p>
+        </div>
+      </aside>
 
-    </main>
+    </div>
+
   </div>
 
   <!-- 頁尾 -->
@@ -135,7 +119,6 @@
   </footer>
 
   <script>
-    // 手機版漢堡選單切換
     const toggle = document.getElementById('menuToggle');
     const links = document.getElementById('navLinks');
     toggle.addEventListener('click', () => {
