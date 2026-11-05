@@ -1,8 +1,27 @@
-/* ==========================================
-   8. RWD 響應式斷點與手機版漢堡選單
-   ========================================== */
+@media (max-width: 1024px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    /* 導覽列漢堡選單切換 */
+    .main-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
     .menu-toggle {
         display: block;
     }
@@ -14,33 +33,11 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--dark-bg);
-        padding: 1rem 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        background: var(--primary-navy);
+        padding: 1.5rem;
     }
 
     .nav-links.open {
         display: flex;
-    }
-
-    .nav-links a {
-        padding: 0.8rem 2rem;
-        text-align: center;
-    }
-
-    /* 主網格切換為單欄垂直排列 */
-    .main-wrapper {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin: 1rem auto;
-        padding: 0 1rem;
-    }
-
-    .hero-image {
-        height: 220px;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
     }
 }
