@@ -1,0 +1,43 @@
+/* ==========================================
+   1. 全域變數與基本重置 (Base & Variables)
+   ========================================== */
+:root {
+    --primary-color: #1E3A8A;     /* 經典鐵道深藍 */
+    --primary-dark: #1E293B;      /* 深層石墨藍 */
+    --accent-color: #D97706;      /* 琥珀金/古蹟金 */
+    --dark-bg: #0F172A;           /* 夜空藍黑背景 */
+    --light-bg: #F8FAFC;          /* 頁面淺灰藍底色 */
+    --surface: #FFFFFF;           /* 卡片與內容表面背景 */
+    --text-main: #1E293B;         /* 主要文字顏色 */
+    --text-muted: #64748B;        /* 次要文字顏色 */
+    --border-color: #E2E8F0;      /* 邊框顏色 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    color: var(--text-main);
+    background-color: var(--light-bg);
+    line-height: 1.7;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

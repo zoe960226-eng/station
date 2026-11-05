@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO 優化標籤 -->
+  <title>參觀與觀影指南｜台中驛鐵道影展 - 交通資訊與星空影院預約</title>
+  <meta name="description" content="規劃您的台中驛鐵道影展之旅！提供露天星空影院索票須知、搭乘公車與台鐵路線指引、園區地圖及周邊停車資訊。">
+  <meta name="keywords" content="台中驛交通, 台中火車站停車, 星空影院, 觀影指南, 舊台中車站地圖, 影展門票">
+  <meta name="author" content="陳柔安">
+  
+  <!-- Open Graph (社群分享 SEO) -->
+  <meta property="og:title" content="參觀與觀影指南｜台中驛鐵道影展">
+  <meta property="og:description" content="輕鬆前往台中驛古蹟園區，探索夜間星空放映與鐵道市集。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/station-track.jpg">
+
+  <!-- 模組化切割 CSS -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- 頂部導覽列 (Navbar) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">台中驛鐵道影展 <span>TRFF</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">首頁</a>
+        <a href="history.html">歷史演進</a>
+        <a href="index.html#highlights">影展片單</a>
+        <a href="visit.html" class="active">觀影指南</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 主佈局容器：Grid System (側邊欄 + 主要內容) -->
+  <div class="main-wrapper">
+    
+    <!-- 側邊欄 (Sidebar) -->
+    <aside class="sidebar">
+      <h3>指南導引</h3>
+      <ul class="sidebar-menu">
+        <li><a href="#ticket">票務與放映須知</a></li>
+        <li><a href="#transport">大眾運輸指引</a></li>
+        <li><a href="#parking">停車與周邊設施</a></li>
+        <li><a href="index.html">→ 返回影展首頁</a></li>
+      </ul>
+      <div class="sidebar-box">
+        <h4>放映諮詢熱線</h4>
+        <p>電話：04-2221-6888</p>
+        <p>地址：台中市中區台灣大道一段1號</p>
+        <p class="tag">園區免門票參觀</p>
+      </div>
+    </aside>
+
+    <!-- 主要內容區 (Main Content) -->
+    <main class="content-area">
+      
+      <!-- 1. 頁面 Header -->
+      <section id="ticket" class="hero-section hero">
+        <img src="images/station-track.jpg" alt="台中驛古蹟月台放映場域" class="hero-image">
+        <div class="hero-content">
+          <h1>參觀與觀影指南</h1>
+          <p>穿梭古蹟月台與歷史軌跡，享受一場舒適的夜間光影之旅。</p>
+        </div>
+      </section>
+
+      <!-- 2. 票務與放映須知 -->
+      <section style="background: var(--surface, #ffffff); padding: 2rem; border-radius: 8px; border: 1px solid var(--border-color, #e0e0e0); margin-top: 2rem;">
+        <h2 style="margin-bottom: 1rem; font-size: 1.5rem; color: var(--primary-color, #1E3A8A);">星空影院入場與預約說明</h2>
+        <ul style="padding-left: 1.2rem; line-height: 1.8;">
+          <li style="margin-bottom: 0.5rem;"><strong>戶外園區參觀：</strong>免費自由入場，展館開放時間為 10:00 - 18:00（每週二休館）。</li>
+          <li style="margin-bottom: 0.5rem;"><strong>露天月台放映：</strong>夜間 18:30 免費開放就座，名額有限，建議提前 20 分鐘抵達第一月台。</li>
+          <li style="margin-bottom: 0.5rem;"><strong>雨天備案：</strong>若遇雨天放映活動將移至舊站站房室內穿堂舉行，異動將同步公告於服務台。</li>
+          <li><strong>注意事項：</strong>古蹟室內展區禁止飲食，月台戶外放映區請保持環境整潔。</li>
+        </ul>
+      </section>
+
+      <!-- 3. 大眾運輸與交通地圖 -->
+      <section id="transport" style="margin-top: 2.5rem;">
+        <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--primary-color, #1E3A8A);">交通方式指引</h2>
+        <div class="feature-grid">
+          
+          <article class="card">
+            <div class="card-body">
+              <h3>🚆 搭乘台鐵（火車）</h3>
+              <p>搭乘台鐵至「台中車站」下車，由大廳階梯下至一樓出站，步行 1 分鐘即可跨越舊站廣場抵達古蹟園區。</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>🚌 搭乘市區公車</h3>
+              <p>搭乘台灣大道幹線公車或市區公車至「台中火車站」或「台中轉運站」下車，沿大轉運平台步行即可達。</p>
+            </div>
+          </article>
+
+          <article class="card" id="parking">
+            <div class="card-body">
+              <h3>🚗 自行開車與停車</h3>
+              <p>導航至「台中火車站地下停車場」或「干城停車場」，停妥後搭乘電梯直通轉運平台即可抵達。</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 分頁導覽 (Pagination，符合作業要求) -->
+      <nav class="pagination-container" aria-label="分頁導航" style="margin-top: 2rem;">
+        <ul class="pagination">
+          <li><a href="index.html" class="page-item">1 (首頁)</a></li>
+          <li><a href="history.html" class="page-item">2 (歷史演進)</a></li>
+          <li><span class="page-item active">3 (參觀指南)</span></li>
+        </ul>
+      </nav>
+
+    </main>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <p>© 2026 台中驛鐵道影展 TRFF | 網站設計：陳柔安｜大二行銷系課程專案</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
